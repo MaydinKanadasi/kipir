@@ -6,6 +6,11 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D6A1C0043065D00000B7C71A /* KipirShared in Frameworks */ = {isa = PBXBuildFile; productRef = D6A1C0023065D00000B7C71A /* KipirShared */; };
+		D6A1C0053065D00000B7C71A /* KipirShared in Frameworks */ = {isa = PBXBuildFile; productRef = D6A1C0033065D00000B7C71A /* KipirShared */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D60B4F7D3065C5A000001A62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		D60B4F6F3065C5A000001A62 /* Kipir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kipir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B4F7C3065C5A000001A62 /* KipirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60B4F863065C5A000001A62 /* KipirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62081643065CA1A00B7C71A /* KipirMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipirMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,12 +51,18 @@
 			path = KipirUITests;
 			sourceTree = "<group>";
 		};
+		D62081653065CA1B00B7C71A /* KipirMac */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KipirMac;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D60B4F6C3065C5A000001A62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				D6A1C0043065D00000B7C71A /* KipirShared in Frameworks */,
 			);
 		};
 		D60B4F793065C5A000001A62 /* Frameworks */ = {
@@ -63,6 +75,12 @@
 			files = (
 			);
 		};
+		D62081613065CA1A00B7C71A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				D6A1C0053065D00000B7C71A /* KipirShared in Frameworks */,
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +90,7 @@
 				D60B4F713065C5A000001A62 /* Kipir */,
 				D60B4F7F3065C5A000001A62 /* KipirTests */,
 				D60B4F893065C5A000001A62 /* KipirUITests */,
+				D62081653065CA1B00B7C71A /* KipirMac */,
 				D60B4F703065C5A000001A62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +101,7 @@
 				D60B4F6F3065C5A000001A62 /* Kipir.app */,
 				D60B4F7C3065C5A000001A62 /* KipirTests.xctest */,
 				D60B4F863065C5A000001A62 /* KipirUITests.xctest */,
+				D62081643065CA1A00B7C71A /* KipirMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +123,9 @@
 				D60B4F713065C5A000001A62 /* Kipir */,
 			);
 			name = Kipir;
+			packageProductDependencies = (
+				D6A1C0023065D00000B7C71A /* KipirShared */,
+			);
 			productName = Kipir;
 			productReference = D60B4F6F3065C5A000001A62 /* Kipir.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +172,27 @@
 			productReference = D60B4F863065C5A000001A62 /* KipirUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D62081633065CA1A00B7C71A /* KipirMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D620816E3065CA1C00B7C71A /* Build configuration list for PBXNativeTarget "KipirMac" */;
+			buildPhases = (
+				D62081603065CA1A00B7C71A /* Sources */,
+				D62081613065CA1A00B7C71A /* Frameworks */,
+				D62081623065CA1A00B7C71A /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				D62081653065CA1B00B7C71A /* KipirMac */,
+			);
+			name = KipirMac;
+			packageProductDependencies = (
+				D6A1C0033065D00000B7C71A /* KipirShared */,
+			);
+			productName = KipirMac;
+			productReference = D62081643065CA1A00B7C71A /* KipirMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +214,9 @@
 						CreatedOnToolsVersion = 27.0;
 						TestTargetID = D60B4F6E3065C5A000001A62;
 					};
+					D62081633065CA1A00B7C71A = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = D60B4F6A3065C5A000001A62 /* Build configuration list for PBXProject "Kipir" */;
@@ -181,6 +228,9 @@
 			);
 			mainGroup = D60B4F663065C5A000001A62;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D60B4F703065C5A000001A62 /* Products */;
 			projectDirPath = "";
@@ -189,6 +239,7 @@
 				D60B4F6E3065C5A000001A62 /* Kipir */,
 				D60B4F7B3065C5A000001A62 /* KipirTests */,
 				D60B4F853065C5A000001A62 /* KipirUITests */,
+				D62081633065CA1A00B7C71A /* KipirMac */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +260,11 @@
 			files = (
 			);
 		};
+		D62081623065CA1A00B7C71A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -223,6 +279,11 @@
 			);
 		};
 		D60B4F823065C5A000001A62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D62081603065CA1A00B7C71A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
@@ -374,6 +435,7 @@
 				DEVELOPMENT_TEAM = 2J679B5P6J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kıpır";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -406,6 +468,7 @@
 				DEVELOPMENT_TEAM = 2J679B5P6J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kıpır";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -512,6 +575,74 @@
 			};
 			name = Release;
 		};
+		D620816C3065CA1C00B7C71A /* Debug configuration for PBXNativeTarget "KipirMac" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J679B5P6J;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kıpır";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maydinkanadasi.KipirMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D620816D3065CA1C00B7C71A /* Release configuration for PBXNativeTarget "KipirMac" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J679B5P6J;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kıpır";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maydinkanadasi.KipirMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,7 +678,35 @@
 			);
 			defaultConfigurationName = Release;
 		};
+		D620816E3065CA1C00B7C71A /* Build configuration list for PBXNativeTarget "KipirMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D620816C3065CA1C00B7C71A /* Debug configuration for PBXNativeTarget "KipirMac" */,
+				D620816D3065CA1C00B7C71A /* Release configuration for PBXNativeTarget "KipirMac" */,
+			);
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Shared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6A1C0023065D00000B7C71A /* KipirShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */;
+			productName = KipirShared;
+		};
+		D6A1C0033065D00000B7C71A /* KipirShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */;
+			productName = KipirShared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D60B4F673065C5A000001A62 /* Project object */;
 	validationLevel = 1;
