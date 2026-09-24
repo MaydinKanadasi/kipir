@@ -6,6 +6,11 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D6A1C0043065D00000B7C71A /* KipirShared in Frameworks */ = {isa = PBXBuildFile; productRef = D6A1C0023065D00000B7C71A /* KipirShared */; };
+		D6A1C0053065D00000B7C71A /* KipirShared in Frameworks */ = {isa = PBXBuildFile; productRef = D6A1C0033065D00000B7C71A /* KipirShared */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D60B4F7D3065C5A000001A62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -57,6 +62,7 @@
 		D60B4F6C3065C5A000001A62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				D6A1C0043065D00000B7C71A /* KipirShared in Frameworks */,
 			);
 		};
 		D60B4F793065C5A000001A62 /* Frameworks */ = {
@@ -72,6 +78,7 @@
 		D62081613065CA1A00B7C71A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				D6A1C0053065D00000B7C71A /* KipirShared in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -116,6 +123,9 @@
 				D60B4F713065C5A000001A62 /* Kipir */,
 			);
 			name = Kipir;
+			packageProductDependencies = (
+				D6A1C0023065D00000B7C71A /* KipirShared */,
+			);
 			productName = Kipir;
 			productReference = D60B4F6F3065C5A000001A62 /* Kipir.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +186,9 @@
 				D62081653065CA1B00B7C71A /* KipirMac */,
 			);
 			name = KipirMac;
+			packageProductDependencies = (
+				D6A1C0033065D00000B7C71A /* KipirShared */,
+			);
 			productName = KipirMac;
 			productReference = D62081643065CA1A00B7C71A /* KipirMac.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,9 @@
 			);
 			mainGroup = D60B4F663065C5A000001A62;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D60B4F703065C5A000001A62 /* Products */;
 			projectDirPath = "";
@@ -671,6 +687,26 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Shared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6A1C0023065D00000B7C71A /* KipirShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */;
+			productName = KipirShared;
+		};
+		D6A1C0033065D00000B7C71A /* KipirShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A1C0013065D00000B7C71A /* XCLocalSwiftPackageReference "../Shared" */;
+			productName = KipirShared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D60B4F673065C5A000001A62 /* Project object */;
 	validationLevel = 1;
